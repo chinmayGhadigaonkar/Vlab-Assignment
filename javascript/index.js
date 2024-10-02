@@ -214,11 +214,11 @@ addRow.addEventListener("click", function () {
   const newId = data[data.length - 1].id + 1;
   const newRow = {
     id: newId,
-    chemical_name: "New Chemical",
-    vendor: "New Vendor",
+    chemical_name: "Add chemical name",
+    vendor: "Add vendor",
     density: "0",
     viscosity: "0",
-    packaging: "New Packaging",
+    packaging: "Add Packaging",
     pack_size: "0",
     unit: "kg",
     quantity: "0",
@@ -242,13 +242,12 @@ addRow.addEventListener("click", function () {
     <td contenteditable="false" class="editable" data-field="quantity" >${newRow.quantity}</td>\
              <td class="text-blue edit-btn">edit</td>
   `;
-   document.querySelectorAll(".edit-btn").forEach((button) => {
-     button.addEventListener("click", handleEdit);
-   });
+  document.querySelectorAll(".edit-btn").forEach((button) => {
+    button.addEventListener("click", handleEdit);
+  });
   tablebody.appendChild(row);
   saveToLocalStorage();
-
-  // const selectAllCheckbox = document.getElementsByName("select")
+  displayData();
 });
 
 function handleEdit() {
