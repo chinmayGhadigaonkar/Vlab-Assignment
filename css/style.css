@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+@media  (max-width: 600px){
+    .header-title h3{
+        font-size: 1.5rem;
+    }
+    .header-tools  i{
+        font-size: .9rem;
+    }
+    table{
+        font-size: .8rem;
+    }
+    table i{
+        font-size: .7rem;
+    }
+
+    
+}
